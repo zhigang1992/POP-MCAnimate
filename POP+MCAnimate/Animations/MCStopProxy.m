@@ -8,7 +8,7 @@
 
 #import "MCStopProxy.h"
 
-#import <POP.h>
+#import <pop/pop.h>
 #import <objc/runtime.h>
 
 static char kStopAnimationProxyKey;
@@ -23,7 +23,7 @@ static char kStopAnimationProxyKey;
 	if ([propertyName hasPrefix:@"pop_"]) {
 		propertyName = [propertyName substringFromIndex:4];
 	}
-    
+
 	// remove animation
 	POPPropertyAnimation *animation = [self.object pop_animationForKey:propertyName];
 	if (animation) {

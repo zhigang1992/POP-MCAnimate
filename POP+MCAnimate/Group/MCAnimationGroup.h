@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <POP.h>
+#import <pop/pop.h>
 
 @interface MCAnimationGroup : NSObject
 
